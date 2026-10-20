@@ -27,6 +27,27 @@ class _PeopleListState extends State<PeopleList> {
               tileColor: i.isOdd
                   ? Colors.grey.shade200
                   : const Color.fromARGB(255, 251, 254, 255),
+              onTap: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text(
+                      _suggestions[i],
+                      style: const TextStyle(fontSize: 18),
+                      textAlign: TextAlign.center,
+                    ),
+                    behavior: SnackBarBehavior.floating,
+                    backgroundColor: Color.fromARGB(255, 33, 52, 61),
+                    duration: Duration(seconds: 2),
+                    margin: const EdgeInsets.symmetric(
+                      horizontal: 16.0,
+                      vertical: 32.0,
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12.0),
+                    ),
+                  ),
+                );
+              },
             ),
           ],
         );
