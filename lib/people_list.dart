@@ -11,22 +11,30 @@ class PeopleList extends StatefulWidget {
 class _PeopleListState extends State<PeopleList> {
   final _suggestions = <String>[];
   final _biggerFont = const TextStyle(fontSize: 18);
-  final _randomNames = RandomNames(Zone.catalonia);
+  final _randomNames = RandomNames(.catalonia);
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
+    return ListView.separated(
       itemBuilder: (context, i) {
         if (i >= _suggestions.length) {
           _suggestions.add(_randomNames.fullName());
         }
         return Column(
           children: [
-            ListTile(title: Text(_suggestions[i], style: _biggerFont)),
-            const Divider(),
+            ListTile(
+              title: Text(_suggestions[i], style: _biggerFont),
+              tileColor: i.isOdd
+                  ? Colors.grey.shade200
+                  : const Color.fromARGB(255, 251, 254, 255),
+            ),
           ],
         );
       },
+      separatorBuilder: (BuildContext context, int i) {
+        return const Divider(height: 0, thickness: 0);
+      },
+      itemCount: 999999,
     );
   }
 }

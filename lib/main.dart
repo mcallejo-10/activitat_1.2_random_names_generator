@@ -11,12 +11,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Generador de noms',
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.blue,
+          backgroundColor: const Color.fromARGB(255, 33, 52, 61),
           foregroundColor: Colors.white,
-          title: const Text('Benvinguts a Flutter'),
+          title: const Text(
+            'Generador de noms',
+            style: TextStyle(fontSize: 32),
+          ),
         ),
         body: PeopleList(),
       ),

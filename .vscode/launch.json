@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "random_name",
+            "name": "Generador de noms",
             "request": "launch",
             "type": "dart"
         },
