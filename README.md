@@ -4,7 +4,7 @@ Activitat d’Aprenentatge 1.2 - Escriu la teva primera app amb Flutter
 
 ---
 
-##  Característiques Principals
+##  Característiques principals
 
 - **Llista Infinita (Infinite Scroll):** Generació dinàmica de noms a mesura que l'usuari es desplaça per la llista.
 - **Estat Conservat (StatefulWidget):** Manté la llista de noms en memòria durant les recàrregues ràpides (*Hot Reload*).
@@ -23,7 +23,7 @@ A més dels requisits bàsics, s'han completat les opcions addicionals:
 5. **Optimització amb `ListView.separated`:** Ús del constructor `ListView.separated` per gestionar la llista i els separadors de manera més eficient.
 
 ---
-## Entorn i Proves Realitzades
+## Entorn i proves realitzades
 
 L'aplicació ha estat provada i verificada correctament en els següents entorns:
 
@@ -32,7 +32,7 @@ L'aplicació ha estat provada i verificada correctament en els següents entorns
 
 ---
 
-## 🛠️ Tecnologies Utilitzades
+## Tecnologies utilitzades
 
 - **Framework:** Flutter
 - **Llenguatge:** Dart
